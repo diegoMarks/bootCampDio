@@ -7,5 +7,6 @@ public class Teste {
 		System.out.println("Preço da gasolina: R$" + abastecer.getPRECO_GASOLINA());
 		System.out.println("Quantidade a ser abastecida: " + abastecer.getQtdGasonlina() + " Litros");
 		System.out.println("Quantidade a pagar: R$" + qtdAbastecido);
+		
 	}
 }
