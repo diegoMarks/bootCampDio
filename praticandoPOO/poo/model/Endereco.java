@@ -4,18 +4,15 @@ public class Endereco {
 	
 	public enum TipoEndereco {RESIDENCIAL, ENTREGA, TRABALHO}
 	
-	public String endereco;
 	public String numero;
 	public String complemento;
 	public String cidade;
+	public TipoEndereco tipoEndereco;
+	public String bairro;
+	public String estado;
+	public String cep;
 	
 	
-	public String getEndereco() {
-		return endereco;
-	}
-	public void setEndereco(String endereco) {
-		this.endereco = endereco;
-	}
 	public String getNumero() {
 		return numero;
 	}
@@ -33,6 +30,12 @@ public class Endereco {
 	}
 	public void setCidade(String cidade) {
 		this.cidade = cidade;
+	}
+	public TipoEndereco getTipoEndereco() {
+		return tipoEndereco;
+	}
+	public void setTipoEndereco(TipoEndereco tipoEndereco) {
+		this.tipoEndereco = tipoEndereco;
 	}
 	public String getBairro() {
 		return bairro;
@@ -52,7 +55,5 @@ public class Endereco {
 	public void setCep(String cep) {
 		this.cep = cep;
 	}
-	public String bairro;
-	public String estado;
-	public String cep;
+	
 }

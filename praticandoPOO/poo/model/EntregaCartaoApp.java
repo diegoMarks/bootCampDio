@@ -1,6 +1,7 @@
 package poo.model;
 
-import java.util.ArrayList;
+import poo.model.Endereco.TipoEndereco;
+import poo.model.Pessoa.TipoPessoa;
 
 public class EntregaCartaoApp {
 
@@ -8,9 +9,11 @@ public class EntregaCartaoApp {
 
 		Endereco endereco = new Endereco();
 		endereco.setCep("00000");
+		endereco.setTipoEndereco(TipoEndereco.ENTREGA);
 		
 		Cliente cliente = new Cliente();
-		//dados do cliente
+		cliente.setTipo(TipoPessoa.FISICA);
+		
 		
 		try {
 			cliente.adicionarEndereco(endereco);
