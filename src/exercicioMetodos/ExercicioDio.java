@@ -1,3 +1,5 @@
+package exercicioMetodos;
+
 public class ExercicioDio {
 
 	private final double PRECO_GASOLINA = 4.50;
