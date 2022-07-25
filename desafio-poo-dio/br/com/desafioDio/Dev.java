@@ -18,10 +18,10 @@ public class Dev {
 	}
 	
 	public void progredir() {
-		Optional<Conteudo> conteudo = this.conteudosConcluidos.stream().findFirst();
-		if(conteudo.isPresent()) {
-			this.conteudosConcluidos.add(conteudo.get());
-			this.conteudoInscrito.remove(conteudo.get());
+		Optional<Conteudo> conteudoOptional = this.conteudoInscrito.stream().findFirst();
+		if(conteudoOptional.isPresent()) {
+			this.conteudosConcluidos.add(conteudoOptional.get());
+			this.conteudoInscrito.remove(conteudoOptional.get());
 		} else {
 			System.err.println("Você não está matrículado em nenhum conteúdo!");
 		}
